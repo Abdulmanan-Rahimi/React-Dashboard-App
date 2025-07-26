@@ -2,7 +2,7 @@
 
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { FiSettings } from "react-icons/fi";
-import { BrowserRouter, Routes ,Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import { Route, Routes } from "react-router";
 
 const App = () => {
@@ -54,14 +54,32 @@ const App = () => {
           </div>
           <div>
             <Routes>
-               {/* Dashboard  */}
-               <Route path="/" element="ECommerce" />
-               <Route path="/ecommerce" element="ECommerce" />
+              {/* Dashboard  */}
+              <Route path="/" element="ECommerce" />
+              <Route path="/ecommerce" element="ECommerce" />
 
-               {/* { Pages} */}
-               <Route path="/orders" element="Orders" />
-               <Route path="/employees" element="Employees" />
-               <Route path="/customers" element="Customers" />
+              {/* { Pages} */}
+              <Route path="/orders" element="Orders" />
+              <Route path="/employees" element="Employees" />
+              <Route path="/customers" element="Customers" />
+
+              {/* {Apps} */}
+
+              <Route path="/kanban" element="Kanban" />
+              <Route path="/editor" element="editor" />
+              <Route path="/calender" element="Calender" />
+              <Route path="/color-picker" element="ColorPicker" />
+
+                 {/* {Charts} */}
+
+              <Route path="/line" element="Line" />
+              <Route path="/area" element="Area" />
+              <Route path="/bar" element="Bar" />
+              <Route path="/pie" element="Pie" />
+              <Route path="/financial" element="Financial" />
+              <Route path="/color-mapping" element="Pyramid" />
+              <Route path="/pyramid" element="Pyramid" />
+              <Route path="/stacked" element="Stacked" />
 
 
             </Routes>
