@@ -1,9 +1,29 @@
-import React from 'react'
+// import React, { useEffect } from "react";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { FiSettings } from "react-icons/fi";
+// import { TooltipComponent } from "@suynfusion/ej2-react-popups";
+
+import { TooltipComponent } from "@syncfusion/ej2-react-popups";
+import { FiSettings } from "react-icons/fi";
+import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
   return (
-    <h1 className='bg-red-200 text-4xl font-bold'>App</h1>
-  )
-}
+    <div>
+      <BrowserRouter>
+        <div className="flex relative dark-main-dark-bg">
+          <div className="fixed right-4 bottom-4 style={{ zIndex: '1000'}}">
+            <TooltipComponent content="Settings" position="Top">
+              <button>
+                <FiSettings />
+              </button>
+            </TooltipComponent>
+          </div>
+        </div>
+      </BrowserRouter>
+    </div>
 
-export default App
+  )
+};
+
+export default App;
